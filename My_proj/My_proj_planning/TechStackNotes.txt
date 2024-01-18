@@ -1,0 +1,8 @@
+For create a working stream between local python script and express API. We can consider either
+    * Inter-process communication (IPC)
+    * In-memory Data stores
+Both approach have the low latency characteristic that suitable for real-time application.
+
+The main different is IPC is a local approach that the scalability is depend on the local capactiy. Whilel In-memory is highly scalable 
+
+For personal project, we will take in-line memory approach

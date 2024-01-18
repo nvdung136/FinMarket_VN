@@ -1,0 +1,24 @@
+Bascially we are having 3 approaches toward Risk free rate, which are:
+    1, Use directly the latest VND gov bond
+    2, Use the 3-month USD treasury bond (not comply with the currency and the time horizon)_ NOT USING CUZ IT DIFFERENT CURRENCY AND TIME HORIZON
+    3, Use (1) but with the discount given in the look table for professor Aswath of NYU (the rate estimate by (3) can be go below into the negative region)_ NOT USING CUZ IT DONT MAKE SENSE
+
+Next we have to find some data toward different approaches related to equity risk premium including:
+    1, For forward approach
+        + Indirect method 
+            (1) Default spread on top of (1)
+                * Ajusted for risk:
+                    <*> Standard deviation in stock (utilized current cafef bot)
+                    <*> Standard deviation in bonds (write new bot to scrap data from investing.com)
+            (2) Directly use the equity premium given in the table of prof Aswath
+        + Directly calculation:
+            * Data on GOV (1-year back) -> investing.com bot
+            * Data on Equity mkt (1-year back) -> cafef bot
+            * Data on growth expectation of Equity mkt (5 years ahead) ???
+    2, For backward approach (Not favourable)
+        + Data on GOV bond
+        + Data on equity market (as far as posible)
+        + Run statical examination on data to get the equity risk premium
+
+To scale over to company equity risk premium:
+    Revenue break down by country data.
